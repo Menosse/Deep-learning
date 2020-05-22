@@ -1,0 +1,10 @@
+FROM continuumio/miniconda
+
+WORKDIR .
+# change working directory to root of nginx webhost
+# using WORKDIR is preferred to using 'RUN cd /some/path'
+
+RUN conda install -c conda-forge/label/cf202003 keras
+
+COPY . .
+
