@@ -7,7 +7,12 @@ WORKDIR .
 RUN conda install -c conda-forge tensorflow\ 
 	&& conda install -c conda-forge blas \
 	&& conda install -c anaconda mkl-service \
-	&& conda install -c conda-forge/label/cf202003 keras
+	&& conda install -c conda-forge/label/cf202003 keras \
+	&& conda install -c anaconda pillow
 
 COPY . .
 
+WORKDIR Convolutional_Neural_Networks
+
+# RUN APP
+CMD ["python", "my_cnn2.py"]
