@@ -83,6 +83,7 @@ def run_training(bs=32, epochs=10):
                          epochs = epochs,
                          validation_data = test_set,
                          validation_steps = 2000/bs)
+    return model
 def main():
     run_training(bs=32, epochs=100)
  
@@ -110,7 +111,7 @@ if __name__ == "__main__":
 
 '''
 
-'''# *** REMOVE THIS MULTILINE COMMNET TO START
+# *** REMOVE THIS MULTILINE COMMNET TO START
 # Import Models
 import numpy as np
 from keras.preprocessing import image
@@ -146,4 +147,3 @@ pred = model.predict(test_image)
 result = singlePredictionResultString(pred)
 
 print(result)
-'''
