@@ -19,7 +19,6 @@ NOTES:
 # from tensorflow.python.client import device_lib
 # print(device_lib.list_local_devices())
 
-# """
 # # ### ================================= ================================= ================================= ###
 # # ### =================================        Data Pre processing        ================================= ###
 # # ### ================================= ================================= ================================= ###
@@ -254,7 +253,7 @@ NOTES:
 # best_parameter = grid_search.best_params_
 # best_accuracy = grid_search.best_score_
 
-
+# """
 
 # ### =================================           After Tunning           ================================= ###
 # ### =================================        Data Pre processing        ================================= ###
@@ -263,7 +262,7 @@ NOTES:
 # ### 1 - Import the main libraries ###
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 # ### ================================= ###
@@ -314,7 +313,7 @@ x_test = scaler_x.fit_transform(x_test)
 # ### =================== =========================================== =================== ###
 # ### ================================= ###
 # ### 1 - Import Keras libraries and models ###
-import keras
+# import keras
 from keras.models import Sequential
 from keras.layers import Dense
 
@@ -365,12 +364,15 @@ from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
 
 
-a = np.array([0.0, 0, 200, 1, 40, 3, 60000, 2, 1, 1, 50000])
+# a = np.array([[0.0, 0, 200, 1, 40, 3, 60000, 2, 1, 1, 50000]])
+a = np.array([[1, 0, 716, 1, 41, 8, 120000, 2, 1, 1, 138000]])
+a = scaler_x.fit_transform(a)
+a
 # a = np.array([1, 1, 600, 1, 40, 3, 60000, 2, 1, 1, 50000])
 # a = np.array([1, 0, 716, 1, 41, 8, 120000, 2, 1, 1, 138000])
-a = scaler_x.fit_transform(a[:, np.newaxis])
-a = a.reshape(1, -1)
-a
+# a = scaler_x.fit_transform(a[:, np.newaxis])
+# a = a.reshape(1, -1)
+# a
 new_pred = classifier.predict(a)
 new_pred = (new_pred > 0.5)
 new_pred
