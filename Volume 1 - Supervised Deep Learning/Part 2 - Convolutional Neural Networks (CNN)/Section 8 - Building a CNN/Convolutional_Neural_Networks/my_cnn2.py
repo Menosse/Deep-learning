@@ -112,3 +112,111 @@ test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Su
                             target_size = (64,64))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 1 is a: {prediction}')
+print(result[0][0])
+
+
+test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Supervised Deep Learning/Part 2 - Convolutional Neural Networks (CNN)/Section 8 - Building a CNN/Convolutional_Neural_Networks/dataset/single_prediction/cat_or_dog_1.jpg',
+                            target_size = (64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 1 (Dog) is a: {prediction}')
+print(result[0][0])
+
+
+
+test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Supervised Deep Learning/Part 2 - Convolutional Neural Networks (CNN)/Section 8 - Building a CNN/Convolutional_Neural_Networks/dataset/single_prediction/cat_or_dog_2.jpg',
+                            target_size = (64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 2 (Cat) is a: {prediction}')
+print(result[0][0])
+
+
+
+test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Supervised Deep Learning/Part 2 - Convolutional Neural Networks (CNN)/Section 8 - Building a CNN/Convolutional_Neural_Networks/dataset/single_prediction/cat1.jpg',
+                            target_size = (64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 3 (Cat) is a: {prediction}')
+print(result[0][0])
+
+
+
+test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Supervised Deep Learning/Part 2 - Convolutional Neural Networks (CNN)/Section 8 - Building a CNN/Convolutional_Neural_Networks/dataset/single_prediction/mia.jpg',
+                            target_size = (64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 4 (Mia) is a: {prediction}')
+print(result[0][0])
+
+
+test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Supervised Deep Learning/Part 2 - Convolutional Neural Networks (CNN)/Section 8 - Building a CNN/Convolutional_Neural_Networks/dataset/single_prediction/mia2.jpg',
+                            target_size = (64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 5 (Mia2) is a: {prediction}')
+print(result[0][0])
+
+
+test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Supervised Deep Learning/Part 2 - Convolutional Neural Networks (CNN)/Section 8 - Building a CNN/Convolutional_Neural_Networks/dataset/single_prediction/moreninha.jpg',
+                            target_size = (64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 6 (Moreninha) is a: {prediction}')
+print(result[0][0])
+
+test_image = image.load_img('/root/deep-learning/Deep-learning-A-Z/Volume 1 - Supervised Deep Learning/Part 2 - Convolutional Neural Networks (CNN)/Section 8 - Building a CNN/Convolutional_Neural_Networks/dataset/single_prediction/summer.jpg',
+                            target_size = (64,64))
+test_image = image.img_to_array(test_image)
+test_image = np.expand_dims(test_image, axis=0)
+result = cnn.predict(test_image)
+train_set.class_indices
+if result[0][0] == 1:
+  prediction = 'Dog'
+else:
+  prediction = 'Cat'
+print(f'Image 7 (Summer e Gaia) is a: {prediction}')
+print(result[0][0])
